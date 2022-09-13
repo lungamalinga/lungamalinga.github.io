@@ -1,0 +1,936 @@
+/*CUSTOM FONTS*/
+@font-face {
+     font-family: WorkSansLight;
+     src: url(/fonts/WorkSans-Light.ttf);
+}
+
+@font-face {
+     font-family: WorkSansBold;
+     src: url(/fonts/WorkSans-Bold.ttf);
+}
+
+@font-face {
+     font-family: WorkSansRegular;
+     src: url(/fonts/WorkSans-SemiBold.ttf);
+}
+
+@font-face {
+     font-family: WorkSansMedium;
+     src: url(/fonts/WorkSans-Medium.ttf);
+}
+
+@font-face {
+     font-family: WorkSansThin;
+     src: url(/fonts/WorkSans-Thin.ttf);
+}
+
+@font-face {
+     font-family: WorkSansRegular;
+     src: url(/fonts/WorkSans-Regular.ttf);
+}
+
+/*CUSTOM COLORS*/
+:root {
+     --darkBLue: rgba(7, 12, 29, 1);
+     --lightBlue: rgba(16, 28, 53, 1);
+     --offWhite: rgba(201, 235, 254, 1);
+}
+
+html,
+body {
+     scroll-behavior: smooth;
+     margin: 0;
+     padding: 0;
+     overflow-x: hidden;
+}
+
+body {
+
+     width: 100%;
+     display: block;
+     background-color: var(--lightBlue);
+
+     /*background-image: linear-gradient(to right, rgb(232, 232, 146) 60%, rgba(235, 106, 164, 1));*/
+}
+
+@media only screen and (max-width: 900px) {
+     #desktop-main {
+          display: none;
+     }
+
+     #intro-bottom {
+          font-size: 35px;
+     }
+}
+
+@media only screen and (min-width: 901px) {
+     #mobile-main {
+          display: none;
+     }
+}
+
+@media only screen and (max-width: 1330px) {
+     #intro-bottom {
+          font-size: 23px;
+     }
+}
+
+#mobile-main {
+     width: 100%;
+}
+
+#d-nav {
+     top: 0;
+     position: fixed;
+     overflow: hidden;
+     background-color: var(--lightBlue);
+     height: 30px;
+     width: 100%;
+     margin: auto;
+     text-align: center;
+     padding: 15px;
+     z-index: 1;
+
+}
+
+.nav-link {
+     font-family: WorkSansLight;
+     text-decoration: none;
+     border-bottom: solid 1px;
+     padding: 5px;
+     margin-left: 35px;
+     color: var(--offWhite);
+
+}
+
+#hire-me-btn {
+     border-top: 1px solid var(--offWhite);
+}
+
+#hire-me-btn:hover {
+     border-top: 4px solid var(--offWhite);
+}
+
+.nav-link:hover {
+     border-bottom: solid 4px var(--offWhite);
+}
+
+#intro-sec {
+     margin-top: 50px;
+     /*border: solid white 1px;*/
+     height: 550px;
+}
+
+.intro-content {
+     width: 47%;
+     height: 100%;
+     float: left;
+     margin-left: 2%;
+}
+
+.intro-content img {
+     margin-left: 8%;
+}
+
+span {
+     font-size: 35px;
+     margin-left: 31%;
+}
+
+#myName {
+     font-family: WorkSansMedium;
+     font-size: 90px;
+     margin-left: 30%;
+}
+
+#intro-message {
+     margin-top: 200px;
+
+     font-family: WorkSansLight;
+     color: var(--offWhite);
+}
+
+.sec-2-content {
+     width: 40%;
+     height: 100%;
+     float: left;
+     margin-left: 7%;
+     /*border: solid red 1px*/
+}
+
+#skills-sec {
+     background-color: var(--darkBLue);
+     width: 100%;
+     height: 600px;
+}
+
+#skills-title {
+     text-align: center;
+     font-family: WorkSansRegular;
+     color: var(--offWhite);
+     font-size: 30px;
+     padding-top: 50px;
+}
+
+#projects-title {
+     text-align: center;
+     font-family: WorkSansRegular;
+     color: var(--darkBLue);
+     font-size: 30px;
+     padding-top: 50px;
+     padding-bottom: 40px;
+}
+
+
+/*table content*/
+#desktop-skills {
+     width: 100%;
+     height: 500px;
+     text-align: center;
+}
+
+#desktop-skills-table {
+     width: 70%;
+     height: 400px;
+     margin-top: 50px;
+     margin-left: 15%;
+
+}
+
+#desktop-skills-table td,
+th {
+     height: fit-content;
+     padding: 10px;
+     top: 40px;
+}
+
+.neuro-icon {
+     align-items: center;
+     background-color: var(--offWhite);
+     box-shadow: 12px 12px 16px 0 rgba(0, 0, 0, 0.25), -8px -8px 12px 0 rgba(255, 255, 255, 0.3);
+     display: flex;
+     justify-content: center;
+     border-radius: 10px;
+     height: 120px;
+     padding: 10px;
+     /*border: solid 1px red;*/
+     margin-left: auto;
+     margin-right: auto;
+}
+
+.neuro-icon img {
+     height: 60px;
+     width: 60px;
+}
+
+.neuro-icon:hover {
+     cursor: pointer;
+}
+
+#projects-section {
+     /*Projects Height (NOTE: change when more projects are added)*/
+     height: 800px;
+     width: 100%;
+     background-color: var(--offWhite);
+}
+
+#projects-table {
+     float: left;
+     /*border: solid green 1px;*/
+     margin-left: 15%;
+     border-radius: 10px;
+     width: 30%;
+     height: 100px;
+}
+
+
+/*below to view the project table*/
+#projects-table td,
+th {
+     /*border: solid yellow 1px;*/
+}
+
+#table-row {
+     width: 100%;
+     /*background-color: white;*/
+     height: 600px;
+}
+
+#site-title {
+     color: var(--darkBLue);
+     font-family: WorkSansRegular;
+}
+
+#site-description {
+     color: var(--darkBLue);
+     font-family: WorkSansLight;
+}
+
+.project-links {
+     text-decoration: none;
+     color: var(--offWhite);
+     padding-left: 20px;
+     padding-right: 20px;
+     padding-top: 10px;
+     padding-bottom: 10px;
+     border-radius: 10px;
+     background-color: var(--darkBLue);
+     font-family: WorkSansRegular;
+}
+
+#about-section {
+
+     height: 250px;
+}
+
+#about-title {
+     text-align: center;
+     font-family: WorkSansRegular;
+     color: var(--offWhite);
+     font-size: 30px;
+     padding-top: 40px;
+     margin-top: 50px;
+     padding: 20px;
+}
+
+#about-me-content {
+     color: var(--offWhite);
+     font-family: WorkSansLight;
+     font-size: 20px;
+     margin-left: 20%;
+     margin-right: 20%;
+     padding: 15px;
+
+}
+
+#about-me-content a {
+     text-decoration: none;
+     font-family: WorkSansRegular;
+     color: var(--offWhite);
+     border-bottom: solid var(--offWhite) 2px;
+}
+
+#contact-section {
+     width: 100%;
+     text-align: center;
+     color: var(--offWhite);
+     height: 750px;
+     background-color: var(--darkBLue);
+     /*background-color: green;*/
+}
+
+#contact-title {
+     text-align: center;
+     font-family: WorkSansRegular;
+     color: var(--offWhite);
+     font-size: 30px;
+     padding-top: 30px;
+     padding-bottom: 20px;
+     margin-top: 100px;
+
+}
+
+#contact-icons {
+     padding: 5px;
+     margin-top: 40px;
+     width: 100%;
+     height: max-content;
+     /*background-color: yellow;*/
+}
+
+#contact-icons img {
+     width: 22px;
+     height: 22px;
+     /*border: solid red 1px;*/
+     padding: 5px;
+}
+
+/*Contact content*/
+
+#contact-details {
+     height: 480px;
+     /*background-color: orange;*/
+     padding: 5px;
+}
+
+.contact-tile {
+     float: left;
+     width: 45%;
+     /*background-color: teal;*/
+     margin-left: 3.2%;
+     height: 480px;
+}
+
+#contact-message-item {
+     width: 100%;
+}
+
+#send-title {
+     font-family: WorkSansRegular;
+     font-size: 20px;
+     padding-top: 20px;
+     color: var(--darkBLue);
+}
+
+
+#message-form {
+     margin-left: 15%;
+     width: 70%;
+     background-color: var(--offWhite);
+     border-radius: 10px;
+     margin-top: 20px;
+}
+
+#loading {
+     color: var(--darkBLue);
+     display: none;
+     font-family: WorkSansRegular;
+
+}
+
+#loading-mobile {
+     color: var(--darkBLue);
+     display: none;
+     font-family: WorkSansRegular;
+
+}
+
+#email-sent {
+     color: var(--darkBLue);
+     font-family: WorkSansRegular;
+     display: none;
+}
+
+#email-sent-mobile {
+     color: var(--darkBLue);
+     font-family: WorkSansRegular;
+     display: none;
+}
+
+#email-sent img {
+     vertical-align: middle;
+}
+
+#email-sent-mobile img {
+     vertical-align: middle;
+}
+
+#loading img {
+     vertical-align: middle;
+}
+
+#loading-mobile img {
+     vertical-align: middle;
+}
+
+.contact-labels {
+     margin-left: 7%;
+     padding: 10px;
+     text-align: left;
+     font-family: WorkSansLight;
+     color: var(--darkBLue);
+}
+
+.custom-input {
+     color: var(--darkBLue);
+     font-family: WorkSansLight;
+     font-size: 14px;
+     height: 40px;
+     width: 80%;
+     border-radius: 5px;
+     padding-left: 10px;
+     outline: none;
+     border: solid 1px var(--darkBLue);
+     background-color: var(--offWhite);
+
+}
+
+.custom-input:focus {
+     border: solid 1.5px var(--darkBLue);
+}
+
+#send-message-btn {
+     height: 50px;
+     width: 83%;
+     margin-top: 20px;
+     margin-bottom: 20px;
+     background-color: var(--darkBLue);
+     color: var(--offWhite);
+     border-radius: 10px;
+     border: none;
+}
+
+#send-message-btn:hover {
+     cursor: pointer;
+}
+
+#sender-message {
+     color: var(--darkBLue);
+     font-family: WorkSansLight;
+     font-size: 14px;
+     width: 80%;
+     border-radius: 5px;
+     padding-left: 10px;
+     outline: none;
+     border: solid 1px var(--darkBLue);
+     background-color: var(--offWhite);
+     padding-top: 10px;
+     resize: none;
+
+}
+
+.contact-info {
+     font-family: WorkSansRegular;
+     padding: 5px;
+}
+
+.contact-info img {
+     vertical-align: middle;
+}
+
+.contact-info a {
+     text-decoration: none;
+     color: var(--offWhite);
+     border-bottom: solid 1px var(--offWhite);
+}
+
+#by-me {
+     font-family: WorkSansLight;
+}
+
+#quote {
+     margin-top: 150px;
+     font-size: 17px;
+     padding-left: 40px;
+     padding-right: 40px;
+     font-family: WorkSansLight;
+}
+
+#steve-woz {
+     padding: 2px;
+     font-family: WorkSansRegular;
+}
+
+#email-info {
+     margin-top: 40px;
+}
+
+#copyright {
+     text-align: center;
+     margin-top: 10px;
+     font-family: WorkSansLight;
+     color: var(--offWhite);
+     font-size: 11px;
+     padding: 5px;
+}
+
+/*back to top button*/
+#back-to-top {
+     position: fixed;
+     bottom: 3em;
+     right: 3em;
+     background-color: rgba(255, 255, 255, .9);
+     color: var(--darkBLue);
+     border: none;
+     border-radius: 5px;
+     padding: 1em;
+     text-transform: uppercase;
+     font-weight: 700px;
+     box-shadow: 0 6 2em 0 rgba(0, 0, 0, .25);
+     transition: all .3s ease-in-out;
+     display: inline-block;
+     opacity: 0;
+     text-decoration: none;
+     font-size: .75em;
+
+}
+
+#back-to-top :hover {
+     background-color: #fff;
+     padding: 1em 3em;
+}
+
+#back-to-top.visible {
+     opacity: 1;
+}
+
+/*Mobile content*/
+#mobile-nav {
+     width: 100%;
+     height: 49px;
+     top: 0px;
+     position: fixed;
+     z-index: 1;
+     background-color: var(--lightBlue);
+     transition: ease-in-out .5s;
+}
+
+#nav-box {
+     float: left;
+     width: 45px;
+     height: 100%;
+     margin-left: 2%;
+}
+
+#mobile-nav hr {
+     width: 80%;
+     margin-left: 10%;
+     margin-right: 10%;
+     background-color: var(--offWhite);
+     height: 1px;
+     border: none;
+     transition: ease-in-out .3s;
+}
+
+#top-line {
+     margin-top: 19px;
+}
+
+#hover-content {
+     color: red;
+     position: fixed;
+     z-index: 2;
+     background-color: var(--offWhite);
+     min-height: 0%;
+     visibility: hidden;
+     width: 100%;
+     margin-top: -1px;
+     overflow: hidden;
+     transition: ease-in-out .3s;
+}
+
+#mobile-intro-message {
+     margin-top: 50px;
+     height: 150px;
+     width: 100%;
+     padding-top: 30px;
+     text-align: center;
+     color: var(--offWhite);
+}
+
+#mobile-hi {
+     font-size: 25px;
+     font-family: WorkSansLight
+}
+
+#mobile-name {
+     font-size: 60px;
+     font-family: WorkSansRegular;
+}
+
+#soft-dev {
+     font-size: 20px;
+     font-family: WorkSansLight;
+}
+
+#mobile-avatar {
+     width: 100%;
+     height: max-content;
+     margin-top: 20px;
+}
+
+#mobile-avatar img {
+     margin-left: 15%;
+     width: 70%;
+}
+
+.mobile-title {
+     width: 100%;
+     text-align: center;
+     font-family: WorkSansRegular;
+     font-size: 25px;
+     padding-top: 50px;
+     padding-bottom: 40px;
+     color: var(--offWhite);
+}
+
+#mobile-title-projects {
+     width: 100%;
+     text-align: center;
+     font-family: WorkSansRegular;
+     font-size: 25px;
+     padding-top: 50px;
+     padding-bottom: 40px;
+}
+
+#mobile-skills {
+     height: max-content;
+}
+
+#mobile-skills table {
+     width: 100%;
+}
+
+#mobile-skills table,
+td,
+tr {
+     padding: 10px;
+}
+
+.neuro-icon-mobile {
+     align-items: center;
+     background-color: var(--offWhite);
+     box-shadow: 12px 12px 16px 0 rgba(0, 0, 0, 0.25), -8px -8px 12px 0 rgba(255, 255, 255, 0.3);
+     display: flex;
+     justify-content: center;
+     border-radius: 10px;
+     height: 150px;
+     width: 150px;
+     /*border: solid 1px red;*/
+     margin-left: auto;
+     margin-right: auto;
+}
+
+.neuro-icon-mobile img {
+     height: 60px;
+     width: 60px;
+}
+
+#mobile-projects {
+     background-color: var(--offWhite);
+     width: 100%;
+     height: max-content;
+     color: var(--darkBLue);
+}
+
+#mobile-projects table {
+     font-family: WorkSansLight;
+     margin-left: 10%;
+     width: 80%;
+     text-align: center;
+}
+
+#mobile-projects table,
+th,
+td {}
+
+#mobile-table {
+     padding-bottom: 50px;
+}
+
+#mobile-about-me {
+     height: max-content;
+     background-color: var(--lightBlue);
+     width: 100%;
+}
+
+#mobile-about-me-content {
+     width: 80%;
+     padding-bottom: 40px;
+     margin-left: 10%;
+     font-family: WorkSansLight;
+     color: var(--offWhite);
+}
+
+#mobile-about-me-title {
+     text-align: center;
+     width: 100%;
+     text-align: center;
+     font-family: WorkSansRegular;
+     font-size: 25px;
+     padding-top: 50px;
+     padding-bottom: 40px;
+     color: var(--offWhite);
+}
+
+#cv-download {
+     color: var(--offWhite);
+     font-family: WorkSansRegular;
+}
+
+#m-cv-download {
+     color: var(--offWhite);
+     font-family: WorkSansRegular;
+     text-underline-offset: 5px;
+}
+
+#mobile-contact-me {
+     text-align: center;
+     background-color: var(--darkBLue);
+     color: var(--offWhite);
+     height: max-content;
+     width: 100%;
+}
+
+#mobile-contact-me-title {
+     text-align: cfenter;
+     width: 100%;
+     text-align: center;
+     font-family: WorkSansRegular;
+     font-size: 25px;
+     padding-top: 50px;
+     padding-bottom: 40px;
+     color: var(--offWhite);
+}
+
+#mobile-contact-me-content {
+     /*background-color: red;*/
+     padding-bottom: 40px;
+     height: max-content;
+
+}
+
+
+#mobile-message-form {
+     background-color: var(--offWhite);
+     border-radius: 10px;
+     height: max-content;
+     padding-top: 20px;
+     padding-bottom: 20px;
+     color: var(--darkBLue);
+     width: 90%;
+     margin-left: 5%;
+}
+
+#send-message-title {
+     font-family: WorkSansRegular;
+     font-size: 15px;
+
+}
+
+.mobile-input {
+     width: 80%;
+     font-size: 14px;
+     height: 30px;
+     margin-top: 10px;
+     border: solid 0.1px var(--darkBLue);
+     font-family: WorkSansLight;
+     color: var(--darkBLue);
+     border-radius: 5px;
+     padding: 7px;
+     outline: none;
+     background-color: var(--offWhite);
+}
+
+.mobile-input:focus {
+     border: solid 1.5px var(--darkBLue);
+}
+
+.mobile-textarea {
+     font-size: 14px;
+     color: var(--darkBLue);
+     width: 80%;
+     margin-top: 10px;
+     border: solid 0.2px var(--darkBLue);
+     font-family: WorkSansLight;
+     border-radius: 5px;
+     padding-left: 10px;
+     padding-top: 10px;
+     outline: none;
+     background-color: var(--offWhite);
+}
+.mobile-textarea:focus{
+     border: solid 1.5px var(--darkBLue);
+}
+
+#mobile-send-message-btn {
+     height: 50px;
+     width: 80%;
+     margin-top: 20px;
+     margin-bottom: 20px;
+     background-color: var(--darkBLue);
+     color: var(--offWhite);
+     border-radius: 10px;
+     border: none;
+}
+
+
+#mobile-info {
+     margin-top: 30px;
+     height: max-content;
+     padding-bottom: 20px;
+}
+
+#mobile-info hr {
+     width: 5%;
+     border: none;
+     background-color: var(--offWhite);
+     height: 2px;
+     margin-top: 0px;
+     border-radius: 10px;
+
+
+}
+
+.mobile-contact-section {
+     width: 100%;
+     padding: 5px;
+}
+
+.mobile-contact-links {
+     font-family: WorkSansRegular;
+     color: var(--offWhite);
+     font-size: 15px;
+     text-decoration: none;
+     /*
+     border-bottom: 1px solid var(--darkBLue);
+          text-underline-offset: 6px;*/
+
+}
+
+.mobile-contact-links img {
+     padding-right: 5px;
+     vertical-align: middle;
+}
+
+#mobile-quote {
+     margin-top: 10px;
+     font-size: 17px;
+     padding-left: 40px;
+     padding-right: 40px;
+     font-family: WorkSansLight;
+}
+
+#mobile-quote hr {
+     background-color: var(--offWhite);
+     border: none;
+     height: 0.5px;
+     border-radius: 10px;
+}
+
+#mobile-media-links {
+     margin-top: 20px;
+     width: 100%;
+}
+
+#mobile-media-links img {
+     padding: 5px;
+     width: 20px;
+     height: 20px;
+}
+
+#mobile-copyright {
+     width: 100%;
+     font-family: WorkSansLight;
+     margin-top: 15px;
+     margin-bottom: 10px;
+     font-size: 15px;
+}
+
+/*hover content*/
+#hover-content-items {
+     text-align: center;
+     width: 100%;
+     margin: 0px;
+     position: absolute;
+     top: 20%;
+}
+
+#hover-content-items a {
+     color: var(--darkBLue);
+     font-family: WorkSansRegular;
+     font-size: 15px;
+     text-decoration: none;
+     width: 100%;
+     float: left;
+     margin-top: 5px;
+     padding-bottom: 5px;
+}
+
+#hover-content-items hr {
+     width: 30%;
+     border: none;
+     background-color: var(--darkBLue);
+     height: 1px;
+     border-radius: 10px;
+}
