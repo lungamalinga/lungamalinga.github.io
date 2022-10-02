@@ -1,0 +1,6 @@
+git notes:
+     - git add .
+     - git commit -m "commment"
+     - git remote -v
+     - git push -f
+     
