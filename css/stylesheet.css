@@ -34,6 +34,7 @@
      --darkBLue: rgba(7, 12, 29, 1);
      --lightBlue: rgba(16, 28, 53, 1);
      --offWhite: rgba(201, 235, 254, 1);
+     --offWhite-2: rgb(147, 215, 255);
 }
 
 html,
@@ -529,7 +530,7 @@ th {
      position: fixed;
      bottom: 3em;
      right: 3em;
-     background-color: rgba(255, 255, 255, .9);
+     background-color: var(--offWhite-2);
      color: var(--darkBLue);
      border: none;
      border-radius: 5px;
@@ -551,7 +552,7 @@ th {
 }
 
 #back-to-top.visible {
-     opacity: 1;
+     opacity: 0.7;
 }
 
 /*Mobile content*/
