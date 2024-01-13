@@ -46,10 +46,10 @@ body {
 }
 
 body {
-
      width: 100%;
      display: block;
      background-color: var(--lightBlue);
+     cursor: url('/images/cursor-2.svg'), auto;
 
      /*background-image: linear-gradient(to right, rgb(232, 232, 146) 60%, rgba(235, 106, 164, 1));*/
 }
@@ -226,6 +226,7 @@ th {
 
 .neuro-icon:hover {
      cursor: pointer;
+     cursor: url('/images/cursor-2.svg'), auto;
 }
 
 #projects-section {
@@ -463,6 +464,7 @@ th {
 
 #send-message-btn:hover {
      cursor: pointer;
+     cursor: url('/images/cursor-2.svg'), auto;
 }
 
 #sender-message {
@@ -980,4 +982,8 @@ td {}
      translate: 10px -14px;
      scale: 0.8;
      background-color: #fff;
+ }
+
+ a:hover {
+     cursor: url('/images/cursor-2.svg'), auto;
  }
