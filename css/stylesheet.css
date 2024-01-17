@@ -987,3 +987,75 @@ td {}
  a:hover {
      cursor: url('/images/cursor-2.svg'), auto;
  }
+
+ 
+ /* * My Education Page Styling */
+
+ .transcript-table{
+     color: var(--offWhite);
+     font-family: WorkSansMedium;
+     margin-left: auto;
+     margin-right: auto;
+     position: relative;
+ }
+
+.transcript-table {
+     width: 50%;
+}
+
+.transcript-table td{
+     padding: 10px;
+     width: 70px;
+     border-left: solid var(--offWhite-2) 1px;
+     border-right: solid var(--offWhite-2) 1px;
+}
+
+ h2 {
+     position: relative;
+     color: var(--offWhite);
+     font-family: WorkSansMedium;
+ }
+
+ #wethinkcode-h2 {
+     margin-top: 50px;
+ }
+
+ #my-education-h2{
+     font-family: WorkSansBold;
+     font-size: 50px;
+ }
+
+ #education-main {
+     position: relative;
+     height: 80vh;
+     text-align: center;
+ }
+
+ .custom-btn{
+     border: solid var(--offWhite) 1px;
+     padding: 8px;
+     border-radius: 10px;
+ }
+ .custom-btn:hover{
+     border: solid var(--offWhite-2) 2px;
+     box-shadow: var(--offWhite-2);
+ }
+
+ #back {
+     /* position: fixed; */
+     top: 3em;
+     left: 3em;
+     background-color: var(--offWhite-2);
+     color: var(--darkBLue);
+     border-radius: 5px;
+     padding: 1em;
+     margin-top: 20px;
+     margin-left: 20px;
+     text-transform: uppercase;
+     font-weight: 700px;
+     box-shadow: 0 6 2em 0 rgba(0, 0, 0, .25);
+     transition: all .3s ease-in-out;
+     display: inline-block;
+     text-decoration: none;
+     font-size: .75em;
+ }
