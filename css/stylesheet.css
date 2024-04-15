@@ -49,7 +49,7 @@ body {
      width: 100%;
      display: block;
      background-color: var(--lightBlue);
-     cursor: url('/images/cursor-2.svg'), auto;
+     /* cursor: url('/images/cursor-2.svg'), auto; */
 
      /*background-image: linear-gradient(to right, rgb(232, 232, 146) 60%, rgba(235, 106, 164, 1));*/
 }
@@ -226,7 +226,7 @@ th {
 
 .neuro-icon:hover {
      cursor: pointer;
-     cursor: url('/images/cursor-2.svg'), auto;
+     /* cursor: url('/images/cursor-2.svg'), auto; */
 }
 
 #projects-section {
@@ -464,7 +464,7 @@ th {
 
 #send-message-btn:hover {
      cursor: pointer;
-     cursor: url('/images/cursor-2.svg'), auto;
+     /* cursor: url('/images/cursor-2.svg'), auto; */
 }
 
 #sender-message {
@@ -985,7 +985,7 @@ td {}
  }
 
  a:hover {
-     cursor: url('/images/cursor-2.svg'), auto;
+     /* cursor: url('/images/cursor-2.svg'), auto; */
  }
 
  
