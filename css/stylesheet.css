@@ -1059,3 +1059,7 @@ td {}
      text-decoration: none;
      font-size: .75em;
  }
+
+ .custom-btn:hover{
+     cursor: pointer;
+ }
