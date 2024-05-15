@@ -48,7 +48,7 @@ body {
 body {
      width: 100%;
      display: block;
-     background-color: var(--lightBlue);
+     /* background-color: var(--lightBlue); */
      /* cursor: url('/images/cursor-2.svg'), auto; */
 
      /*background-image: linear-gradient(to right, rgb(232, 232, 146) 60%, rgba(235, 106, 164, 1));*/
@@ -118,8 +118,10 @@ body {
 
 #intro-sec {
      margin-top: 50px;
+     background-color: var(--lightBlue);
      /*border: solid white 1px;*/
      height: 550px;
+     position: relative;
 }
 
 .intro-content {
@@ -162,7 +164,7 @@ span {
 #skills-sec {
      background-color: var(--darkBLue);
      width: 100%;
-     height: 600px;
+     height: 700px;
 }
 
 #skills-title {
@@ -171,6 +173,7 @@ span {
      color: var(--offWhite);
      font-size: 30px;
      padding-top: 50px;
+     position: relative;
 }
 
 #projects-title {
@@ -185,17 +188,17 @@ span {
 
 /*table content*/
 #desktop-skills {
-     border: solid orange 1px;
      width: 100%;
-     /* height: 1000px; */
+     position: relative;
+     /* height: 1500px; */
      text-align: center;
+     /* background-color: red; */
 }
 
 #desktop-skills-table {
-     width: 70%;
-     height: 400px;
+     width: 80%;
      margin-top: 50px;
-     margin-left: 15%;
+     margin-left: 10%;
 
 }
 
@@ -232,8 +235,9 @@ th {
 
 #projects-section {
      /*Projects Height (NOTE: change when more projects are added)*/
-     height: 1500px;
+     height: 1400px;
      width: 100%;
+     position: relative;
      background-color: var(--offWhite);
 }
 
@@ -281,8 +285,9 @@ th {
 }
 
 #about-section {
-
-     height: 250px;
+     position: relative;
+     background-color: var(--lightBlue);
+     height: 400px;
 }
 
 #about-title {
@@ -290,9 +295,9 @@ th {
      font-family: WorkSansRegular;
      color: var(--offWhite);
      font-size: 30px;
-     padding-top: 40px;
-     margin-top: 50px;
-     padding: 20px;
+     position: relative;
+     padding-top: 90px;
+     width: 100%;
 }
 
 #about-me-content {
@@ -302,7 +307,6 @@ th {
      margin-left: 20%;
      margin-right: 20%;
      padding: 15px;
-
 }
 
 #about-me-content a {
@@ -328,8 +332,7 @@ th {
      font-size: 30px;
      padding-top: 30px;
      padding-bottom: 20px;
-     margin-top: 100px;
-
+     position: relative;
 }
 
 #contact-icons {
