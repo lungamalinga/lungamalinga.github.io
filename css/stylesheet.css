@@ -231,25 +231,24 @@ th {
 
 #projects-section {
      /*Projects Height (NOTE: change when more projects are added)*/
-     height: 800px;
+     height: 1500px;
      width: 100%;
      background-color: var(--offWhite);
 }
 
 #projects-table {
-     float: left;
      /*border: solid green 1px;*/
-     margin-left: 15%;
+     margin-left: 10%;
      border-radius: 10px;
-     width: 30%;
+     width: 80%;
      height: 100px;
+     padding: 20px;
 }
 
 
 /*below to view the project table*/
-#projects-table td,
-th {
-     /*border: solid yellow 1px;*/
+#projects-table td, th {
+     /* border: solid yellow 1px; */
 }
 
 #table-row {
@@ -1062,4 +1061,11 @@ td {}
 
  .custom-btn:hover{
      cursor: pointer;
+ }
+ .skill-icons img {
+     height: 30px;
+     margin: auto;
+     width: 10%;
+     padding: 5px;
+     /* border: solid red 1px; */
  }
