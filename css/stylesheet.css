@@ -606,12 +606,13 @@ th {
 }
 
 #mobile-intro-message {
-     margin-top: 50px;
+     margin-top: 49px;
      height: 150px;
      width: 100%;
      padding-top: 30px;
      text-align: center;
      color: var(--offWhite);
+     background-color: var(--darkBLue);
 }
 
 #mobile-hi {
@@ -632,7 +633,8 @@ th {
 #mobile-avatar {
      width: 100%;
      height: max-content;
-     margin-top: 20px;
+     background-color: var(--darkBLue);
+     position: relative;
 }
 
 #mobile-avatar img {
@@ -648,6 +650,7 @@ th {
      padding-top: 50px;
      padding-bottom: 40px;
      color: var(--offWhite);
+     background-color: var(--lightBlue);
 }
 
 #mobile-title-projects {
@@ -661,6 +664,7 @@ th {
 
 #mobile-skills {
      height: max-content;
+     background-color: var(--lightBlue);
 }
 
 #mobile-skills table {
@@ -770,7 +774,7 @@ td {}
 }
 
 #mobile-contact-me-content {
-     /*background-color: red;*/
+     /* background-color: red; */
      padding-bottom: 40px;
      height: max-content;
 
