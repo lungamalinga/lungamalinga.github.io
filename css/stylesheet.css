@@ -236,7 +236,7 @@ th {
 
 #projects-section {
      /*Projects Height (NOTE: change when more projects are added)*/
-     height: 1450px;
+     height: 1550px;
      width: 100%;
      position: relative;
      background-color: var(--offWhite);
